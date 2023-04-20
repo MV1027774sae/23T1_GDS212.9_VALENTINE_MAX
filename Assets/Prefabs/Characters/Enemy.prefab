@@ -163,7 +163,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 14
+  m_Constraints: 126
   m_CollisionDetection: 1
 --- !u!1001 &7096422806171323074
 PrefabInstance:
@@ -5742,7 +5742,7 @@ MonoBehaviour:
   projectileForceForward: 30
   projectileForceUp: 2
   sightRange: 30
-  attackRange: 25
+  attackRange: 22.5
   muzzleFlash: {fileID: 1693997113137737864}
   audioSource: {fileID: 2063805525435033149}
   gunshot: {fileID: 8300000, guid: 44c1f41042ca28747b92424e0981b905, type: 3}
