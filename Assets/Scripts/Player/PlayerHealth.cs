@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -32,14 +33,7 @@ public class PlayerHealth : MonoBehaviour
         {
             playerHealth = 0f;
 
-            //gameOver.SetActive(true);
-
-            GetComponent<ThirdPersonShooterController>().enabled = false;
-            GetComponent<PlayerMovementTutorial>().enabled = false;
-            //GetComponent<PauseMenu>().enabled = false;
-
-            Cursor.lockState = CursorLockMode.Confined;
-            Cursor.visible = true;
+            SceneManager.LoadScene(0);
         }
 
         totalPlayerhealth.text = Mathf.Round(playerHealth).ToString();
